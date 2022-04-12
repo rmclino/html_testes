@@ -1,122 +1,136 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+}
+
+
 h2 {
-    position: relative;
-    left: 100px;
-    top: 0px;
+  position: relative;
+  left: 100px;
+  top: 0px;
 }
 
 .image-logo {
-    height: 70px;
-    padding:20px;
+  height: 70px;
+  padding: 20px;
 }
 
 .container {
-    position: relative;
-    padding: 30px 20px 0px 20px;
-    background-color: #022f44;
-    display: flex;
-    margin: 0px;
+  position: relative;
+  padding: 30px 20px 0px 20px;
+  background-color: #022f44;
+  display: flex;
+  margin: 0px;
 }
 
 .image {
-    position: relatie;
-    display: inline-block;
-    color:#f1f1f1;
+  position: relatie;
+  display: inline-block;
+  color: #f1f1f1;
 }
 
 .nav {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    text-align:right;
-    margin: auto 0px auto auto;
-    padding: 20px;
-    color:#f1f1f1;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto 0px auto auto;
+  padding: 20px;
+  color: #f1f1f1;
 }
-.nav a{
-    font-size: 24px;
+
+.nav a {
+  font-size: 24px;
+  text-align: center;
 }
+
 .nav a:hover {
-    color:#c9995b;
+  color: #c9995b;
 }
 
 .login {
-    position: relative;
-    display: inline;
-    vertical-align: middle;
-    text-align: center;
-    margin: auto;
-    padding: 10px 30px 10px 30px;
-    border-radius: 10px;
-    background-color: #c9995b;
-    color:#f1f1f1;
+  position: relative;
+  display: inline;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  background-color: #c9995b;
+  color: #f1f1f1;
 }
-.login a{
-    font-size: 24px;
+
+.login a {
+  vertical-align: middle;
+  font-size: 24px;
 }
+
 .login:hover {
-    background-color: #f1f1f1;
-    color:#c9995b;
+  background-color: #f1f1f1;
+  color: #c9995b;
 }
 
 
 .link {
-    
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
+
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
 }
 
-body {
-    font-family: "Lato", sans-serif;
-    margin:0px;}
-  
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #022f44;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
   .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #022f44;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    padding-top: 15px;
   }
 
-  .open-menu {
-    background-color: #022f44;
-    color:#f1f1f1;
-    display:block;
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.open-menu {
+  background-color: #022f44;
+  color: #f1f1f1;
+  display: block;
 }
