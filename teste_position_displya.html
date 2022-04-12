@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+
+        <div class="image">
+            <img class="image-logo" src="static/images/5f197029bea6e16994e015c4_logo_bco.png" alt="Logo Traad">
+        </div>
+        <div class="nav">
+            <a class="link">Teste0</a>
+            <a class="link">Teste1</a>
+            <a class="link">Teste2</a>
+            <div class="login">
+                <a link="">Login</a>
+            </div>
+        </div>
+        
+    </div>
+    <span class="open-menu" style="font-size:30px;cursor:pointer; " onclick="openNav()">&#9776; Menu</span>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+
+</html>
